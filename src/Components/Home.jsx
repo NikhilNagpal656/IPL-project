@@ -4027,7 +4027,7 @@ const Home = () => {
                     )}
                   </div>
                 </div>
-                <p className="text-[9px] lg:text-[13px]">{status}</p>
+                <p className="text-[7px] lg:text-[13px]">{status}</p>
               </div>
             </Link>
           )
