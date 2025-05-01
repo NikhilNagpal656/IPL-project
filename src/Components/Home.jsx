@@ -3980,25 +3980,25 @@ const Home = () => {
             i
           ) => (
             // console.log(singleMatch)
-            <Link className="w-[50%] h-[130px]" to={`/matchDetails/${matchId}`}>
+            <Link className="w-[50%] h-[100px]" to={`/matchDetails/${matchId}`}>
               {/* <h1 key={i}>{team1Name} VS {teamSName}, {date} {status}</h1>   */}
-              <div className=" w-full bg-gray-500 border p-3 flex flex-col gap-2.5">
+              <div className=" w-full bg-gray-500 border p-3 flex flex-col gap-2">
                 <div className="flex justify-between">
-                  <p> {matchDesc}</p>
-                  <p>{date.split(2025)[0]}</p>
+                  <p className="text-[10px]"> {matchDesc}</p>
+                  <p className="text-[10px]">{date.split(2025)[0]}</p>
                 </div>
                 <div>
                   <div className="flex justify-between">
                     <div className="flex gap-5">
                       <img
-                        className="w-4 object-contain"
+                        className="w-3 object-contain"
                         src={`https://res.cloudinary.com/digkgdovw/image/upload/v1715267905/iplTeamLogo/${team1Img}`}
                         alt=""
                       />
-                      <p>{team1Name}</p>
+                      <p className="text-[10px]">{team1Name}</p>
                     </div>
                     {matchScore?.team1Score ? (
-                      <p>
+                      <p className="text-[10px]">
                         {matchScore?.team1Score?.inngs1?.runs}/
                         {matchScore?.team1Score?.inngs1?.wickets} (
                         {matchScore?.team1Score?.inngs1?.overs})
@@ -4010,14 +4010,14 @@ const Home = () => {
                   <div className="flex justify-between">
                     <div className="flex gap-5">
                       <img
-                        className="w-4 object-contain"
+                        className="w-3 object-contain"
                         src={`https://res.cloudinary.com/digkgdovw/image/upload/v1715267905/iplTeamLogo/${team2Img}`}
                         alt=""
                       />
-                      <p>{team2Name}</p>
+                      <p className="text-[10px]">{team2Name}</p>
                     </div>
                     {matchScore?.team2Score ? (
-                      <p>
+                      <p className="text-[10px]">
                         {matchScore?.team2Score?.inngs1?.runs}/
                         {matchScore?.team2Score?.inngs1?.wickets} (
                         {matchScore?.team2Score?.inngs1?.overs})
