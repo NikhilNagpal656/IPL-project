@@ -1738,7 +1738,7 @@ try {
   },[])
 
   return (
-    <div className='w-full p-4'>
+    <div className='w-full p-4 text-[10px] md:text-[13px] lg:text-[16px]'>
 
       <table className='w-full '>
         <tr className='text-center '>
